@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteRow">
+    <children>
+        <TextField fx:id="txtDelete" layoutX="113.0" layoutY="106.0" prefHeight="25.0" prefWidth="264.0" promptText="Enter Name you want to delete" />
+        <Button fx:id="buttonDelete" layoutX="225.0" layoutY="200.0" mnemonicParsing="false" onAction="#DeleteButton" prefHeight="36.0" prefWidth="75.0" style="-fx-background-radius: 100; -fx-background-color: ORANGE;" text="Delete" />
+    </children>
+</AnchorPane>

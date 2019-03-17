@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="599.0" style="-fx-background-color: #99cc00;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCustomer">
+    <children>
+        <VBox layoutX="44.0" layoutY="74.0" prefHeight="298.0" prefWidth="512.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="74.0">
+            <children>
+            <AnchorPane prefHeight="56.0" prefWidth="512.0" />
+                <TextField fx:id="name" prefHeight="50.0" prefWidth="492.0" promptText="Customer Name" style="-fx-background-color: #dfff80;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="number" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="492.0" promptText="Customer Number" style="-fx-background-color: #dfff80;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="stay" layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="492.0" promptText="Stay Period " style="-fx-background-color: #dfff80;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="noofguests" layoutX="10.0" layoutY="35.0" prefHeight="50.0" prefWidth="492.0" promptText="No. Of Guests" style="-fx-background-color: #dfff80;">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button fx:id="savebutton" mnemonicParsing="false" onAction="#addcustomer" prefHeight="51.0" prefWidth="121.0" style="-fx-background-color: #ff5500; -fx-background-radius: 100;" text="Save">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+                </Button>
+                <Button fx:id="displaybutton" mnemonicParsing="false" onAction="#displaydata" prefHeight="49.0" prefWidth="132.0" style="-fx-background-color: #ff5500; -fx-background-radius: 100;" text="Display Table">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="300.0" right="10.0" top="-57.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+                </Button>
+            </children>
+        </VBox>
+      <AnchorPane layoutX="90.0" layoutY="29.0" prefHeight="50.0" prefWidth="404.0">
+         <children>
+            <Label layoutX="94.0" layoutY="6.0" prefHeight="41.0" prefWidth="219.0" text="ENTER CUSTOMER DETAILS" textAlignment="CENTER" textFill="#800909">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="delete" layoutX="147.0" layoutY="398.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="41.0" prefWidth="107.0" style="-fx-background-radius: 100; -fx-background-color: #ff5500;" text="Delete" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="delete1" layoutX="348.0" layoutY="398.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="41.0" prefWidth="107.0" style="-fx-background-radius: 100; -fx-background-color: #ff5500;" text="Update Days" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

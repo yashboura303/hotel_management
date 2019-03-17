@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3FB6B;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListCustomers">
+   <children>
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="50.0" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #cc6600;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="75.0" style="-fx-background-color: #ffc266;" text="Customer Name" />
+          <TableColumn fx:id="NumberColumn" prefWidth="75.0" style="-fx-background-color: #ffad33;" text="Contact Number" />
+            <TableColumn fx:id="StayColumn" prefWidth="75.0" style="-fx-background-color: #ffcc80;" text="Total Guests" />
+            <TableColumn fx:id="GuestsColumn" prefWidth="75.0" style="-fx-background-color: #ffad33;" text="Stay Period (Days)" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="164.0" layoutY="6.0" prefHeight="38.0" prefWidth="395.0" text="ENTERED CUSTOMER DETAILS" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
